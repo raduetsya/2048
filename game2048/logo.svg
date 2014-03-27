@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg4501"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   inkscape:export-filename="/home/lanus/workspace/game2048/res/drawable-xxhdpi/ic_launcher.png"
+   inkscape:export-xdpi="810"
+   inkscape:export-ydpi="810"
+   sodipodi:docname="New document 16">
+  <defs
+     id="defs4503">
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4466">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.91700189"
+         id="feGaussianBlur4468" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4417">
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4419"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3e2020;fill-opacity:1;stroke:none;font-family:Sans"
+         transform="translate(-0.69857798,-1.0873563)"><flowRegion
+           id="flowRegion4421"><rect
+             id="rect4423"
+             width="682.8631"
+             height="246.47722"
+             x="101.01525"
+             y="321.01175"
+             style="fill:#3e2020;fill-opacity:1" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3e2020;fill-opacity:1;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono Bold"
+           id="flowPara4425">2048</flowPara></flowRoot>    </clipPath>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4335-1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.92979846"
+         id="feGaussianBlur4337-5" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4335-1-1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.92979846"
+         id="feGaussianBlur4337-5-0" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4335-1-8">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.92979846"
+         id="feGaussianBlur4337-5-8" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.627417"
+     inkscape:cx="5.2030618"
+     inkscape:cy="7.2498928"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="724"
+     inkscape:window-x="-7"
+     inkscape:window-y="14"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="1.390625,6.484375"
+       id="guide5273" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="14.535156,6.453125"
+       id="guide5277" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4506">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1036.3622)">
+    <rect
+       style="fill:#5e7078;fill-opacity:1;stroke:none"
+       id="rect4197"
+       width="15.785213"
+       height="15.625309"
+       x="0.11873869"
+       y="1036.7146"
+       ry="0.28291425"
+       rx="0.28291425" />
+    <rect
+       style="fill:#606060;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect2985-9"
+       width="14.27263"
+       height="14.378316"
+       x="0.8322413"
+       y="1037.6146"
+       ry="0.097869158"
+       rx="0.17119949" />
+    <g
+       transform="matrix(2.1011149,0,0,2.0934036,-1.5902671,-1147.3838)"
+       id="g5209-4">
+      <rect
+         transform="matrix(0.02010068,0,0,0.02010068,-2.3605688,1035.8425)"
+         ry="13.446872"
+         rx="12.366941"
+         y="445.28696"
+         x="190.65448"
+         height="130.22408"
+         width="310.5004"
+         id="rect3889-85-7-7-3-3"
+         style="opacity:0.36480689;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter4335-1-8)" />
+      <rect
+         ry="0.27029118"
+         rx="0.24858388"
+         y="1044.7118"
+         x="1.4006472"
+         height="2.6175916"
+         width="6.2412672"
+         id="rect3889-85-7-5-5"
+         style="fill:#fffedb;fill-opacity:1;stroke:none" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4209-5"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3e2020;fill-opacity:1;stroke:none;filter:url(#filter4466);font-family:Sans"
+       transform="matrix(0.1217735,0,0,0.10451812,-10.112764,1006.2693)"><flowRegion
+         id="flowRegion4211-4"><rect
+           id="rect4213-8"
+           width="682.8631"
+           height="246.47722"
+           x="101.01525"
+           y="321.01175"
+           style="fill:#3e2020;fill-opacity:1" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3e2020;fill-opacity:1;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono Bold"
+         id="flowPara4235-4">2048</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4209-7"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3e2020;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(0.1217735,0,0,0.10451812,-10.117301,1006.3106)"
+       clip-path="url(#clipPath4417)"><flowRegion
+         id="flowRegion4211-5"><rect
+           id="rect4213-1"
+           width="682.8631"
+           height="246.47722"
+           x="101.01525"
+           y="321.01175"
+           style="fill:#3e2020;fill-opacity:1" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3e2020;fill-opacity:1;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono Bold"
+         id="flowPara4235-5">2048</flowPara></flowRoot>    <g
+       id="g5963"
+       transform="translate(0,2.3985644)">
+      <g
+         id="g5209">
+        <rect
+           style="opacity:0.36480689;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter4335-1)"
+           id="rect3889-85-7-7-3"
+           width="310.5004"
+           height="130.22408"
+           x="190.65448"
+           y="445.28696"
+           rx="25.984365"
+           ry="28.149731"
+           transform="matrix(0.02010068,0,0,0.02010068,-2.3605688,1035.8425)" />
+        <rect
+           style="fill:#fffedb;fill-opacity:1;stroke:none"
+           id="rect3889-85-7-5"
+           width="6.2412672"
+           height="2.6175916"
+           x="1.4006472"
+           y="1044.7118"
+           rx="0.52230328"
+           ry="0.56582856" />
+      </g>
+      <flowRoot
+         transform="matrix(0.05680792,0,0,0.04875821,-3.9515973,1029.1858)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3e2020;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot4209-5-8"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4211-4-8"><rect
+             style="fill:#3e2020;fill-opacity:1"
+             y="321.01175"
+             x="101.01525"
+             height="246.47722"
+             width="682.8631"
+             id="rect4213-8-9" /></flowRegion><flowPara
+           id="flowPara4235-4-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3e2020;fill-opacity:1;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono Bold">1024</flowPara></flowRoot>    </g>
+    <g
+       id="g5954"
+       transform="translate(0,2.4637694)">
+      <g
+         id="g5209-0"
+         transform="translate(6.9298607,-0.065205)">
+        <rect
+           style="opacity:0.36480689;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter4335-1-1)"
+           id="rect3889-85-7-7-3-1"
+           width="310.5004"
+           height="130.22408"
+           x="190.65448"
+           y="445.28696"
+           rx="25.984365"
+           ry="28.149731"
+           transform="matrix(0.02010068,0,0,0.02010068,-2.3605688,1035.8425)" />
+        <rect
+           style="fill:#fffedb;fill-opacity:1;stroke:none"
+           id="rect3889-85-7-5-0"
+           width="6.2412672"
+           height="2.6175916"
+           x="1.4006472"
+           y="1044.7118"
+           rx="0.52230328"
+           ry="0.56582856" />
+      </g>
+      <flowRoot
+         transform="matrix(0.05680792,0,0,0.04875821,2.9782633,1029.1206)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3e2020;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot4209-5-8-7"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4211-4-8-8"><rect
+             style="fill:#3e2020;fill-opacity:1"
+             y="321.01175"
+             x="101.01525"
+             height="246.47722"
+             width="682.8631"
+             id="rect4213-8-9-3" /></flowRegion><flowPara
+           id="flowPara4235-4-2-5"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#3e2020;fill-opacity:1;font-family:Droid Sans Mono;-inkscape-font-specification:Droid Sans Mono Bold">1024</flowPara></flowRoot>    </g>
+  </g>
+</svg>

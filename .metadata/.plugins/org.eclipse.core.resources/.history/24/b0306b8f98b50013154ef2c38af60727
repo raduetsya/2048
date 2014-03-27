@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="tileColor0">#efeddc</color>
+    <color name="tileColor1">#b0bec6</color>
+    <color name="tileColor2">#a3c1d3</color>
+    <color name="tileColor3">#7d86c8</color>
+    <color name="tileColor4">#7d86c8</color>
+    <color name="tileColor5">#90c2a4</color>
+    <color name="tileColor6">#227b91</color>
+    <color name="tileColor7">#236c9a</color>
+    <color name="tileColor8">#b15fd8</color>
+    <color name="tileColor9">#ddc274</color>
+    <color name="tileColor10">#3e2020</color>
+    <color name="tileColor11">#ffffff</color>
+
+    <color name="textColor0">#000000</color>
+    <color name="textColor1">#323232</color>
+    <color name="textColor2">#292929</color>
+    <color name="textColor3">#e4e7d5ff</color>
+    <color name="textColor4">#ffffff</color>
+    <color name="textColor5">#f6f6be</color>
+    <color name="textColor6">#d6ccd8</color>
+    <color name="textColor7">#d6ccd8</color>
+    <color name="textColor8">#d6ccd8</color>
+    <color name="textColor9">#3e2020</color>
+    <color name="textColor10">#e6e4c9</color>
+    <color name="textColor11">#000000</color>
+</resources>

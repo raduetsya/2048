@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="tileColor0">#e2dec0</color> 
+    <color name="tileColor1">#bec6b0</color> <!-- 2 -->
+    <color name="tileColor2">#bfd79f</color> <!-- 4 -->
+    <color name="tileColor3">#84a46e</color> <!-- 8 -->
+    <color name="tileColor4">#bfd79f</color> <!-- 16 -->
+    <color name="tileColor5">#b4daa4</color> <!-- 32 -->
+    <color name="tileColor6">#a9ccb1</color> <!-- 64 -->
+    <color name="tileColor7">#236c9a</color> <!-- 128 -->
+    <color name="tileColor8">#6d42ff</color> <!-- 256 -->
+    <color name="tileColor9">#43376a</color> <!-- 512 -->
+    <color name="tileColor10">#3e2020</color> <!-- 1024 -->
+    <color name="tileColor11">#ffffff</color> <!-- 2048 -->
+
+    <color name="textColor0">#000000</color>
+    <color name="textColor1">#323232</color>
+    <color name="textColor2">#292929</color>
+    <color name="textColor3">#26251a</color>
+    <color name="textColor4">#1d1b14</color>
+    <color name="textColor5">#f9f9d5</color>
+    <color name="textColor6">#ffffff</color>
+    <color name="textColor7">#ffffff</color>
+    <color name="textColor8">#eae6cf</color>
+    <color name="textColor9">#f1eed7</color>
+    <color name="textColor10">#e6e4c9</color>
+    <color name="textColor11">#000000</color>
+</resources>

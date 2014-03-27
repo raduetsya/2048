@@ -1,0 +1,58 @@
+package com.lanus.game2048;
+
+import android.graphics.Canvas;
+//import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
+
+/**
+ * Created by lanus on 3/18/14.
+ */
+
+public class DefaultTileView implements TileView {
+
+    int roundAngleSize;
+    Paint tilePaint = new Paint();
+    RectF tempRect = new RectF();
+    static final int MAX_SIZE_INCREASE = 15;
+
+    int[] tileColorArr = new int[]{
+            R.color.tileColor0, R.color.tileColor1, R.color.tileColor2, R.color.tileColor3,
+            R.color.tileColor4, R.color.tileColor5, R.color.tileColor6, R.color.tileColor7,
+            R.color.tileColor8, R.color.tileColor9, R.color.tileColor10, R.color.tileColor11
+    };
+    int[] tileTextColorArr = new int[]{
+            R.color.textColor0, R.color.textColor1, R.color.textColor2, R.color.textColor3,
+            R.color.textColor4, R.color.textColor5, R.color.textColor6, R.color.textColor7,
+            R.color.textColor8, R.color.textColor9, R.color.textColor10, R.color.textColor11
+    };
+
+    public DefaultTileView(int roundAngleSize) {
+        this.roundAngleSize = roundAngleSize;
+    }
+
+    @Override
+    public void draw(Canvas c, RectF rect, int rang, float howCloseToDissapear) {
+        if (rang == 0 || rang > 11) return;
+
+        tilePaint.setAntiAlias(true);
+        tilePaint.setColor(tileColorArr[rang]);
+        tilePaint.setStrokeWidth(5);
+
+        tempRect.set(rect);
+        if (howCloseToDissapear != 0) {
+            int newSize = (int)(Math.pow((1 - howCloseToDissapear),3) * MAX_SIZE_INCREASE);
+            tempRect.inset(-1*newSize, -1*newSize);
+        }
+        
+        c.drawRoundRect(tempRect, 0,0, tilePaint);
+
+        String text = "" + (int)(Math.pow(2,rang));
+
+        tilePaint.setColor(tileTextColorArr[rang]);
+        tilePaint.setTextSize()
+        tilePaint.setTextAlign(Paint.Align.CENTER);
+        c.drawText(text, rect.centerX(), rect.centerY(), tilePaint);
+
+    }
+}
