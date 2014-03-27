@@ -122,6 +122,7 @@ public class GameGrid {
     }
 
     public void doNewGame(List<Action> actionHistory) {
+        updateHighscore();
         for(int i=0; i<sizeX; i++)
             for (int j=0; j<sizeY; j++) {
                 //if ((i*sizeY+j) <= 11) data[i][j].rang = i*sizeY + j;

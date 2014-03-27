@@ -67,7 +67,7 @@ public class GameView extends View {
         @Override
         public void run() {
             invalidate();
-            if (animStop == false) 
+            if ( !(animStop == true && animList == null) ) 
                 animHandler.postDelayed(this, ANIM_FRAMEDELAY);
         }
     };
@@ -141,7 +141,6 @@ public class GameView extends View {
         if (createTime < 0.0) createTime = 0.0;
         if (createTime > 1.0) {
             animList = null;
-            animStop = true;
             return false;
         }
         if (time > 1.0) time = 1.0;
@@ -247,32 +246,35 @@ public class GameView extends View {
             } else {
                 animFadeGameover += 4; // 1000ms / 240
             }
-            resultPaint.setAlpha(animFadeGameover);
-            canvas.drawRect(mainRect, resultPaint);
             
-            resultPaint.setColor(Color.WHITE); // TODO: make color
-            resultPaint.setAlpha(animFadeGameover);
-            resultPaint.setTextAlign(Align.CENTER);
-            
-            resultPaint.setTextSize(30); // TODO: make pixel-independent
-            resultPaint.getTextBounds("A", 0, 1, resultRect);
-            int fontHeight = (int)(resultRect.height()*1.5);
-            
-            if (model.getGameState() == GameGrid.GAMESTATE.GAMEOVER)
-                canvas.drawText("GAME OVER", mainRect.centerX(), mainRect.centerY()+fontHeight*-1, resultPaint);
-            else
-                canvas.drawText("2048! YOU WIN!", mainRect.centerX(), mainRect.centerY()+fontHeight*-1, resultPaint);
-            
-            canvas.drawText("Score: " + model.getScore(), mainRect.centerX(), mainRect.centerY()+fontHeight*1, resultPaint);
-            if (model.getScore() > model.getHighscore()) {
-                canvas.drawText("New record!", mainRect.centerX(), mainRect.centerY()+fontHeight*2, resultPaint);
-                canvas.drawText("Last record: " + model.getHighscore(), mainRect.centerX(), mainRect.centerY()+fontHeight*3, resultPaint);
-                model.updateHighscore();
-            } else {
-                canvas.drawText("Highscore: " + model.getHighscore(), mainRect.centerX(), mainRect.centerY()+fontHeight*2, resultPaint);
+            if (animFadeGameover > 10) {
+	            resultPaint.setAlpha(animFadeGameover);
+	            canvas.drawRect(mainRect, resultPaint);
+	            
+	            resultPaint.setColor(Color.WHITE); // TODO: make color
+	            resultPaint.setAlpha(animFadeGameover);
+	            resultPaint.setTextAlign(Align.CENTER);
+	            
+	            resultPaint.setTextSize(30); // TODO: make pixel-independent
+	            resultPaint.getTextBounds("A", 0, 1, resultRect);
+	            int fontHeight = (int)(resultRect.height()*1.5);
+	            
+	            if (model.getGameState() == GameGrid.GAMESTATE.GAMEOVER)
+	                canvas.drawText("GAME OVER", mainRect.centerX(), mainRect.centerY()+fontHeight*-1, resultPaint);
+	            else
+	                canvas.drawText("2048! YOU WIN!", mainRect.centerX(), mainRect.centerY()+fontHeight*-1, resultPaint);
+	            
+	            canvas.drawText("Score: " + model.getScore(), mainRect.centerX(), mainRect.centerY()+fontHeight*1, resultPaint);
+	            if (model.getScore() > model.getHighscore()) {
+	                canvas.drawText("New record!", mainRect.centerX(), mainRect.centerY()+fontHeight*2, resultPaint);
+	                canvas.drawText("Last record: " + model.getHighscore(), mainRect.centerX(), mainRect.centerY()+fontHeight*3, resultPaint);
+	            } else {
+	                canvas.drawText("Highscore: " + model.getHighscore(), mainRect.centerX(), mainRect.centerY()+fontHeight*2, resultPaint);
+	            }
             }
-        } else
+        } else {
             animFadeGameover = 0;
+        }
 
         resultPaint.setColor(Color.WHITE);
         resultPaint.setTextAlign(Align.LEFT);
