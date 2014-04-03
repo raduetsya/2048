@@ -76,7 +76,8 @@ public class GameGrid {
     }
 
     Tile[][] data;
-    int sizeX, sizeY;
+    public int sizeX;
+	public int sizeY;
     
     int scoreCurrent = 0;
     public int getScore() { return scoreCurrent; }
