@@ -2,6 +2,7 @@ package com.lanus.game2048.view;
 
 import android.graphics.Canvas;
 import android.graphics.RectF;
+import android.util.Log;
 
 /**
  * Draw typical board and tiles
@@ -26,6 +27,7 @@ public class UIDraw {
 	 */
 	public void drawTile( Canvas c, RectF rect, int type) {
 		// TODO Implement method
+		Log.i("UIDraw","drawTile "+type);
 	}
 	
 	/**
@@ -39,6 +41,7 @@ public class UIDraw {
 	 */
 	public void drawNewbornTile( Canvas c, RectF rect, int type, float age) {
 		// TODO Implement method
+		Log.i("UIDraw","drawNewbornTile "+type);
 	}
 	
 	/**
@@ -46,6 +49,7 @@ public class UIDraw {
 	 */
 	public void preGridDraw( Canvas c ) {
 		// TODO Implement method
+		Log.i("UIDraw","preGridDraw");
 	}
 	
 	/**
@@ -53,6 +57,7 @@ public class UIDraw {
 	 */
 	public void postGridDraw( Canvas c ) {
 		// TODO Implement method
+		Log.i("UIDraw","postGridDraw");
 	}
 	
 }
