@@ -1,7 +1,7 @@
 package com.lanus.game2048;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.SharedPreferences;
@@ -11,8 +11,10 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
-    GameGrid gameGridModel = new GameGrid(4,4);
-
+	protected GameView getGameView() {
+		return (GameView)(findViewById(R.id.game_view));
+	}
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +29,22 @@ public class MainActivity extends ActionBarActivity {
     protected void onResume() {
         super.onResume();
 
-        GameView view = (GameView)(findViewById(R.id.game_view));
-        view.setModel(gameGridModel);
-        view.invalidate();
+        getGameView().invalidate();
         
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-        gameGridModel.restoreState(preferences);
+
+        Map<String, String> stringStoreData = new HashMap<String, String>();
+
+        Map<String, ?> storeData = preferences.getAll();
+        for (Map.Entry<String, ?> anyEntry : storeData.entrySet()) {
+        	if (anyEntry.getValue() instanceof String)
+        		stringStoreData.put(anyEntry.getKey(), (String)anyEntry.getValue());
+        }
+        
+        getGameView().loadState(stringStoreData);
+        
         if (preferences.getBoolean("NEW_GAME", true) == true)
-            gameGridModel.doNewGame(null);
+            getGameView().onUserAction("NEW_GAME");
 
     }
     
@@ -42,12 +52,21 @@ public class MainActivity extends ActionBarActivity {
     protected void onPause() {
         super.onPause();
         
+        Map<String, String> storeData = new HashMap<String, String>();
+        
+        Map<String, String> viewMap = getGameView().saveState();
+        if (viewMap != null)
+        	storeData.putAll(viewMap);
+        
         SharedPreferences preferences = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.clear();
         
         editor.putBoolean("NEW_GAME", false);
-        gameGridModel.saveState(editor);
+
+        for (Map.Entry<String, String> entry : storeData.entrySet()) {
+        	editor.putString(entry.getKey(), entry.getValue());
+        }
         
         editor.commit();
         
@@ -67,15 +86,15 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        GameView view = (GameView)(findViewById(R.id.game_view));
+        
         if (id == R.id.action_newgame) {
-            List<GameGrid.Action> animList = new ArrayList<GameGrid.Action>();
-            gameGridModel.doNewGame(animList);
-            view.startAnim(animList);
+            //List<GameGrid.Action> animList = new ArrayList<GameGrid.Action>();
+            //gameGridModel.doNewGame(animList);
+            //view.startAnim(animList);
         }
         if (id == R.id.action_cheat) {
-            gameGridModel.doCheat();
-            view.invalidate();
+            //gameGridModel.doCheat();
+            //view.invalidate();
         }
         return super.onOptionsItemSelected(item);
     }
