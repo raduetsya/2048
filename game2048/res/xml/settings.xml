@@ -1,0 +1,32 @@
+<uisettings id="default">
+    
+    <description>Lanus 2048</description>
+    
+    <background-color>#5e7078</background-color>
+    <grid-color>#606060</grid-color>
+    <tile-empty-color>#ffffff</tile-empty-color>
+    
+	<grid-spacing-x>10</grid-spacing-x>
+	<grid-spacing-y>10</grid-spacing-y>
+	<grid-margin-x>15</grid-margin-x>
+	<grid-margin-y>15</grid-margin-y>
+    
+    <grid-round-angles>8</grid-round-angles>
+    <grid-round-tile-angles>2</grid-round-tile-angles>
+    
+	<tile rang="0"  label=""     color="#e2dec0" text-color="#000000" />
+	<tile rang="1"  label="2"    color="#b2b2b2" text-color="#4b4b4b" />
+	<tile rang="2"  label="4"    color="#999999" text-color="#393939" />
+	<tile rang="3"  label="8"    color="#9da3a9" text-color="#152525" />
+	<tile rang="4"  label="16"   color="#bcc9cb" text-color="#132327" />
+	<tile rang="5"  label="32"   color="#2d93ae" text-color="#f9f9d5" />
+	<tile rang="6"  label="64"   color="#227b91" text-color="#ffffff" />
+	<tile rang="7"  label="128"  color="#236c9a" text-color="#ffffff" />
+	<tile rang="8"  label="256"  color="#6d42ff" text-color="#eae6cf" />
+	<tile rang="9"  label="512"  color="#43376a" text-color="#f1eed7" />
+	<tile rang="10" label="1024" color="#3e2020" text-color="#e6e4c9" />
+	<tile rang="11" label="2048" color="#fffedb" text-color="#3e2020" />
+	
+	<tile-default color="#fffedb" text-color="#3e2020" />
+	
+</uisettings>

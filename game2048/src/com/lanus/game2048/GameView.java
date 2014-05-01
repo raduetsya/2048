@@ -1,13 +1,18 @@
 package com.lanus.game2048;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.Random;
 
+import org.xmlpull.v1.XmlPullParserException;
+
 import android.content.Context;
+import android.content.res.Resources.NotFoundException;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -46,7 +51,13 @@ public class GameView extends View implements com.lanus.game2048.view.Context {
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
         
-        uisett = new UISettings();
+        try {
+			uisett = new UISettings(context.getResources().getXml(R.xml.settings));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
         model = new GameGrid(4,4);
         uidraw = new UIDraw(this);
         metrics = new GameViewMetrics(this);

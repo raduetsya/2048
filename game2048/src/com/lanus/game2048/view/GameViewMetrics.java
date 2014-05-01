@@ -31,11 +31,11 @@ public class GameViewMetrics {
 	}
 	
 	private void loadScheme() {
-		gridMarginX = context.getUiSettings().getInt("GridMarginX", 5);
-		gridMarginY = context.getUiSettings().getInt("GridMarginY", 5);
+		gridMarginX = context.getUiSettings().getInt("grid-margin-x", 5);
+		gridMarginY = context.getUiSettings().getInt("grid-margin-y", 5);
 		
-		gridSpacingX = context.getUiSettings().getInt("GridSpacingX", 2);
-		gridSpacingY = context.getUiSettings().getInt("GridSpacingY", 2);
+		gridSpacingX = context.getUiSettings().getInt("grid-spacing-x", 2);
+		gridSpacingY = context.getUiSettings().getInt("grid-spacing-y", 2);
 	}
 	
 	public boolean onSizeChanged(int width, int height) {

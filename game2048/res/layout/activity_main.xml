@@ -13,14 +13,6 @@
         android:id="@+id/game_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        custom:color="#606060"
-        custom:backgroundColor="#5e7078"
-        custom:roundAngles="8"
-        custom:roundTileAngles="2"
-        custom:gridColor="#ffffff"
-        custom:gridSpacing="10"
-        custom:gridMargins="15"
         />
 
 
