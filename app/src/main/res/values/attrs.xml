@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.raduetsya.game2048.GameView">
+        <attr name="roundAngles" format="integer" />
+        <attr name="roundTileAngles" format="integer" />
+
+        <attr name="gridSpacing" format="integer" />
+        <attr name="gridMargins" format="integer" />
+
+        <attr name="foregroundColor" format="string" />
+        <attr name="gridColor" format="string" />
+        <attr name="backgroundColor" format="string" />
+
+        <!-- look for the other colors in colors.xml resource file -->
+    </declare-styleable>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.raduetsya.game2048.MainActivity" >
+
+    <item android:id="@+id/action_newgame"
+        android:title="New game"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_cheat"
+        android:title="Do cheat"
+        android:orderInCategory="150"
+        app:showAsAction="never" />
+</menu>
